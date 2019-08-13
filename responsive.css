@@ -1,0 +1,71 @@
+@media all and (max-width:1000px){
+
+}
+@media all and (max-width:670px){
+
+  h1{
+    font-size:30px;
+  }
+
+  .menus{
+    float:none;
+    margin-top:50px;
+  }
+
+  .menus a{
+    display:none;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+    float:right;
+    color:#fafafa;
+    cursor:pointer;
+  }
+
+  .mobile-menus a{
+    display:none;
+    float:none;
+    width:100%;
+    background-color:#333;
+    color:#fafafa;
+    z-index:11;
+    border-bottom:1px solid #bbb;
+    height:50px;
+    font-size:20px;
+    padding:15px;
+    line-height:50px;
+  }
+
+  .current{
+      border-left:5px solid #fafafa;
+      opacity:1;
+  }
+
+  .indivi-about{
+    float:none;
+    width:80%;
+  }
+
+  .about-explain{
+    width:80%;
+    padding-top:80px;
+    margin:0 auto;
+  }
+
+  .footer-left{
+    margin-left:10px;
+  }
+
+  .footer-sns{
+    margin-left:20px;
+  }
+
+  .footer-sns a{
+    margin:0;
+  }
+}
