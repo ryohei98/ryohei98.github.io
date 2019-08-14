@@ -115,8 +115,7 @@ body{
 
 .container{
   width:80%;
-  padding-top:50px;
-  margin:0 auto;
+  padding:50px 0 0 0;
   max-width:1000px;
 }
 
@@ -195,6 +194,10 @@ body{
 
 .about-explain{
   margin-top:80px;
+}
+
+#clips{
+  padding:0;
 }
 
 .clips-btn{

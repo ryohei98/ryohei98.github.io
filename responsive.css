@@ -39,6 +39,16 @@
     font-size:20px;
     padding:15px;
     line-height:50px;
+    box-sizing:content-box;
+  }
+
+  .mobile-menu:active{
+    text-decoration:none;
+    color:#fafafa;
+  }
+
+  .container{
+    width:90%;
   }
 
   .current{
@@ -50,16 +60,20 @@
   padding:20px 30px;
 }
 
-  .indivi-about{
-    float:none;
-    width:80%;
-  }
-
   .about-explain{
     width:80%;
     padding-top:80px;
     margin:0 auto;
   }
+  .indivi-about{
+    float:none;
+    width:80%;
+  }
+
+  .indivi-explain{
+    width:100%;
+  }
+
 
   .footer-left{
     margin-left:10px;
