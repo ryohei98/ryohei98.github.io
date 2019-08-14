@@ -244,6 +244,15 @@ body{
   margin-bottom:50px;
 }
 
+.form-control{
+  border-radius:3px;
+  box-shadow:none;
+}
+
+.container textarea{
+  height: 100px;
+}
+
 .submit{
   text-align:center;
 }
