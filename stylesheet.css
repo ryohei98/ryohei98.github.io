@@ -137,7 +137,7 @@ body{
   margin-bottom:50px;
 }
 
-.ch-about a{
+#ch-about-btn{
   margin-top:0px;
   display:inline-block;
   padding:20px 70px;
@@ -149,14 +149,14 @@ body{
   color:#0a0a0a;
 }
 
-.ch-about>a:hover{
+#ch-about-btn:hover{
   opacity:1;
   text-decoration:none;
   color:#0a0a0a;
 
 }
 
-.ch-about>a:active{
+#ch-about-btn:active{
   box-shadow:0 0 0 0 white;
   position:relative;
   top:7px;
