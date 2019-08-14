@@ -27,7 +27,7 @@
     cursor:pointer;
   }
 
-  .mobile-menus a{
+  .mobile-menu{
     display:none;
     float:none;
     width:100%;
@@ -45,6 +45,10 @@
       border-left:5px solid #fafafa;
       opacity:1;
   }
+
+#ch-about-btn{
+  padding:20px 30px;
+}
 
   .indivi-about{
     float:none;
