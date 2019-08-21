@@ -2,10 +2,27 @@ html{
   height:100%;
 }
 
-*{
+*,
+*::before,
+*::after{
   font-family: 'Georgia',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
   display:block;
   overflow-x:hidden;
+  z-index:1;
+  box-sizing:content-box;
+}
+
+.cf:before, .cf:after{
+  content:'';
+  display:table;
+}
+
+.cf:after{
+  clear:both;
+}
+
+.clear{
+  clear:left;
 }
 
 
@@ -17,28 +34,36 @@ body{
   margin:0;
   height:100%;
 }
+
   .square1{
     width:100%;
     height:100%;
-    background-image:url('https://picsum.photos/500/500?grayscale');
     background-size:cover;
     margin:0;
+    position:absolute;
+    top:0;
+    left:0;
   }
+
+
   .square2{
     width:100%;
     height:100%;
-    background-color:#fafafa;
+    background-color:#000;
     position:absolute;
     top:0;
     right:0;
-    box-shadow:7px 0 0 0 #cacaca;
     text-align:right;
   }
 
   .title-name{
-    position:relative;
+    position:absolute;
     top:48%;
     right:10%;
     font-size:5rem;
-    color:#4a4a4a;
+    color:#fafafa;
+  }
+
+  .container{
+    box-sizing: border-box;
   }

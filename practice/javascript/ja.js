@@ -1,18 +1,15 @@
 $(function(){
 
-$('title-name').fadeIn('slow');
-
-  // 実行を遅らせる
   setTimeout(function(){
+    $('title-name').fadeIn('slow');
+  },3000);
+
+
+
     // widthの値を取得
-  const $width = $('.square1').width();
-  $('.square2').animate({
+    const $width = $('.square1').width();
+    $('.square2').delay(3000).animate({
     'marginRight':$width*1.3
-  },4000);
-
-
-
-  console.log($width);
-},500);
-
+    // animate-duration
+    },3000);
 });
