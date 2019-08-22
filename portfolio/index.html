@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js.js"></script>
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="top">
-      <h1 class="top-name">Ryohei Kondo<h1>
-      <h2 class="top-pf">Portfolio</h2>
+  <div class="container" id="container">
+    <div class="wrapper-left" id="wrapper-left">
+      <div class="top" id="top">
+        <div class="inner" id="inner">
+          <h1 class="top-name" id="top-name">Ryohei Kondo</h1>
+          <h2 class="top-pf" id="top-pf">Portfolio</h2>
+        </div>
+      </div>
+      <div class="content-wrapper" id="content-wrapper">
+        <div class="content-about" id="content-about">
+          <img src="../image/ryohei.jpg" id="pic">
+          <div class="about-explain" id="about-explain">
+            <h2>近藤凌平</h2>
+            <p>一橋大学在学生で、独学でWeb制作を行う。使用は HTML5/CSS3/Javascript/jQuery/Pythonなど。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-right" id="wrapper-right">
+      <div class="menu-container" id="menu-container">
+        <ur class="menu-items" id="menu-items">
+          <li class="menu-item" id="home-btn">HOME</li>
+          <li class="menu-item" id="about-btn">ABOUT</li>
+          <li class="menu-item" id="archives-btn">ARCHIVES</li>
+          <li class="menu-item menu-bottom"><a href="mailto:konpei.to98@gmail.com" id="contact-btn">CONTACT</a></li>
+        </ur>
+      </div>
     </div>
   </div>
-
 </body>
+
 </html>
