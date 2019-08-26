@@ -1,5 +1,6 @@
 $(function() {
 
+const topAnimation = ()=>{
   //はじめのアニメーション
   $('#top').delay(400).fadeIn('slow');
   $('#inner').delay(400).fadeIn('slow');
@@ -20,7 +21,13 @@ $(function() {
     }, 30000);
   }, );
 
-  let $current = undefined;
+  //homeをcurrentに
+  $('#home-btn').delay(1000).addClass('current');
+};
+
+  topAnimation();
+
+  let $current = $('#home-btn');
 
   //menuを出す
   $('#wrapper-right').delay(2200).slideDown('slow');
@@ -30,8 +37,8 @@ $(function() {
     if ($(this).hasClass('current')) {
 
     } else if ($current === $('#archvies-btn')) {
+      $('#menu-items').find('.current').removeClass('current');
       $(this).addClass('current');
-      $('#archives-btn').removeClass('current');
 
       //aboutをリストから消しタイトルに、archivesをリストに追加
       $('#title-archives').fadeOut('slow');
@@ -45,8 +52,8 @@ $(function() {
       console.log($current);
 
     } else {
+      $('#menu-items').find('.current').removeClass('current');
       $(this).addClass('current');
-      $('#archives-btn').removeClass('current');
 
       //topの移動
       $('#top').delay(300).animate({
@@ -81,8 +88,8 @@ $(function() {
     if ($(this).hasClass('current')) {
 
     } else if ($current === $('#about-btn')) {
+      $('#menu-items').find('.current').removeClass('current');
       $(this).addClass('current');
-      $('#archives-btn').removeClass('current');
 
       //archivesのバックグラウンドカラーを変更、archivesをリストに追加
       $(this).css('background-color', '#999');
@@ -96,8 +103,9 @@ $(function() {
       console.log($current);
 
     } else {
+      $('#menu-items').find('.current').removeClass('current');
       $(this).addClass('current');
-      $('#about-btn').removeClass('current');
+
 
       //topの移動
       $('#top').delay(300).animate({
@@ -125,6 +133,19 @@ $(function() {
       $current = $('#archives-btn');
       console.log($current);
     };
+  });
+
+  $('#home-btn').click(function(){
+    if($current!= $('#home-btn')){
+
+    }else{
+        topAnimation();
+        $current=$('#home-btn');
+        $('#menu-items').find('.current').removeClass('current');
+        $(this).addClass('current');
+
+
+    }
   });
 
 
