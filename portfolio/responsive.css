@@ -1,0 +1,18 @@
+@media screen (max-width:1000px) {
+
+}
+
+@media screen (max-width:670px){
+  .continer{
+    display:block;
+  }
+
+  .wrapper-left{
+    width:100%;
+    height:100%;
+  }
+
+  .wrapper-right{
+    display:none;
+  }
+}
