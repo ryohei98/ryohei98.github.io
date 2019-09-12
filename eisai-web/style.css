@@ -1,0 +1,139 @@
+*{
+  font-family: YuGothic,'Yu Gothic','Yu Gothic UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+/* ヘッダー */
+
+header{
+  font-size:2rem;
+  height:83px;
+  width:100%;
+  background-color:#6988FF;
+  position:fixed;
+  text-align:left;
+  box-shadow:0 1px 2px 2px lightgray;
+  z-index:100000;
+}
+
+.header-left{
+  float:left;
+  width:430px;
+  height:83px;
+  background-color:white;
+}
+
+.header-img{
+  position:absolute;
+  padding:0;
+  margin:0;
+}
+
+.branch-name{
+  background-color:white;
+  line-height:83px;
+  height:80px;
+  font-weight:bold;
+  width:3rem;
+  color:#707070;
+}
+
+/* 実際のコンテンツ */
+
+.container{
+  padding-top:200px;
+  padding-bottom:100px;
+}
+
+/* ログイン関連のページ題名 */
+
+.top-title{
+  color:#6988FF;
+  font-weight:bold;
+}
+
+#top-title-explain{
+  padding-bottom:50px;
+}
+
+.row{
+  border:1px solid #707070;
+  padding:50px 0 50px 50px;
+  border-radius:10px;
+}
+
+.login-menu{
+  height:30vh;
+  background-color:#6988FF;
+  color:white;
+  line-height:30vh;
+  font-weight:bold;
+  font-size:1.5rem;
+  text-align:center;
+  box-shadow:0 3px 3px 3px lightgray;
+  border:1px solid #707070;
+  padding:0;
+  border-radius:3px;
+  overflow:hidden;
+}
+
+.login-menu:hover{
+  background-color:rgba(105,136,255,0.7)
+}
+
+.login-menu>a{
+  color:white;
+  display:block;
+  height:30vh;
+  padding:0 15px;
+}
+
+.login-menu>a:hover{
+  text-decoration:none;
+}
+
+#login-student-btn,
+#login-studnet-btn:hover{
+  background-color:#aaa;
+  text-decoration:line-through;
+  cursor:none;
+}
+
+#login-explain{
+  width:inherit;
+  background-color:#6988FF;
+  margin-bottom:0;
+  color:white;
+  font-size:1.3rem;
+  font-weight:bold;
+  padding:6px 24px;
+  border-radius:5px 5px 0 0;
+  border:1px solid #707070;
+  border-bottom:none;
+}
+
+.login-form{
+  background-color:#eee;
+  border-radius:0 0 5px 5px;
+  border:1px solid #707070;
+}
+
+.login-btn-wrapper{
+  width:100%;
+  text-align:center;
+}
+
+.login-btn{
+  text-align:center;
+  background-color:transparent;
+  color:#6988FF;
+  border:3px solid #6988FF;
+  font-weight:bold;
+  font-size:1.3rem;
+  padding:10px 50px;
+  width:50%;
+}
+
+.login-btn:hover{
+  background-color:#6988FF;
+  border-color:#6988FF;
+}
