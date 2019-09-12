@@ -8,7 +8,7 @@ header{
   font-size:2rem;
   height:83px;
   width:100%;
-  background-color:#6988FF;
+  background-color:#4A40FF;
   position:fixed;
   text-align:left;
   box-shadow:0 1px 2px 2px lightgray;
@@ -37,17 +37,23 @@ header{
   color:#707070;
 }
 
+/* レスポンシブのヘッダーメニュー */
+
 /* 実際のコンテンツ */
 
 .container{
-  padding-top:200px;
+  padding-top:120px;
   padding-bottom:100px;
+}
+
+.container-login{
+  padding-top:200px;
 }
 
 /* ログイン関連のページ題名 */
 
 .top-title{
-  color:#6988FF;
+  color:#4A40FF;
   font-weight:bold;
 }
 
@@ -55,15 +61,16 @@ header{
   padding-bottom:50px;
 }
 
-.row{
+.login-choice{
   border:1px solid #707070;
-  padding:50px 0 50px 50px;
   border-radius:10px;
 }
 
+/*ログイン方法の選択画面  */
+
 .login-menu{
   height:30vh;
-  background-color:#6988FF;
+  background-color:#4A40FF;
   color:white;
   line-height:30vh;
   font-weight:bold;
@@ -77,6 +84,7 @@ header{
 }
 
 .login-menu:hover{
+  transition:all 0.5s;
   background-color:rgba(105,136,255,0.7)
 }
 
@@ -88,6 +96,7 @@ header{
 }
 
 .login-menu>a:hover{
+  transition:all 0.5s;
   text-decoration:none;
 }
 
@@ -98,9 +107,11 @@ header{
   cursor:none;
 }
 
+/* ログインフォーム */
+
 #login-explain{
   width:inherit;
-  background-color:#6988FF;
+  background-color:#4A40FF;
   margin-bottom:0;
   color:white;
   font-size:1.3rem;
@@ -125,15 +136,89 @@ header{
 .login-btn{
   text-align:center;
   background-color:transparent;
-  color:#6988FF;
-  border:3px solid #6988FF;
+  color:#4A40FF;
+  border:3px solid #4A40FF;
   font-weight:bold;
   font-size:1.3rem;
-  padding:10px 50px;
+  padding:10px 10px;
   width:50%;
 }
 
 .login-btn:hover{
-  background-color:#6988FF;
-  border-color:#6988FF;
+  background-color:#4A40FF;
+  border-color:#4A40FF;
+  color:white;
+  transition:all 0.5s;
+  text-decoration:none;
+}
+
+/* 各ページの共通 */
+
+.title-wrapper{
+
+}
+
+.top-icon{
+  border-radius:50%;
+  padding:0.5rem;
+  background-color:#2B04E8;
+  color:#eee;
+}
+
+.page-title{
+  font-size:3rem;
+  color:#2B04E8;
+  width:100%;
+}
+
+.title-font{
+  font-weight:bold;
+  font-size:4rem;
+  position:relative;
+  top:0.5rem;
+}
+
+/* サイドバー */
+
+.side-bar>ul{
+  padding:0;
+  border-left:1px solid #4A40FF;
+}
+
+.menu-item{
+  list-style-type: none;
+  font-size:1.2rem;
+  font-weight:bold;
+  margin:0.3rem;
+  border-radius:3px;
+  border:1px solid white;
+  color:royalblue;
+  text-align:left;
+  /* background-color:#E3F3FA; */
+}
+
+.menu-item-a{
+  display:block;
+  width:100%;
+  height:100%;
+  padding:1rem;
+  border-radius:3px;
+}
+
+.menu-item-a:hover{
+  transition: all 0.5s;
+  background-color:#4A40FF;
+  color:#eee;
+  text-decoration:none;
+}
+
+.menu-item-icon{
+  padding-right:0.3rem;
+}
+
+/* mainの部分 */
+
+.main-wrapper{
+  border:1px solid #707070;
+  border-radius:6px;
 }
