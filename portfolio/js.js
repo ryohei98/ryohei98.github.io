@@ -1,5 +1,7 @@
 $(function() {
 
+if($('.container').width() >= 670){
+
 const topAnimation = ()=>{
   //はじめのアニメーション
   $('#top').delay(400).fadeIn('slow');
@@ -15,9 +17,11 @@ const topAnimation = ()=>{
   //背景を動かす
   setInterval(function() {
     $('#container').animate({
-      'width': '120%'
+      'width': '100vw',
+      'height':'120vh'
     }, 30000).animate({
-      'width': '100%'
+      'width':'120vw',
+      'height':'100vh'
     }, 30000);
   }, );
 
@@ -136,17 +140,37 @@ const topAnimation = ()=>{
   });
 
   $('#home-btn').click(function(){
-    if($current!= $('#home-btn')){
+    if($current != $('#home-btn')){
+      //はじめのアニメーション
+      $('#top').fadeOut('slow').removeAttr('style');
+      $('#inner').fadeOut('slow').removeAttr('style');
+      $('#top-name').fadeOut('slow').removeAttr('style');
+      $('#top-pf').fadeOut('slow').removeAttr('style');
+      $('#wrapper-right').fadeOut('slow').removeAttr('style');
+      $('#title-about').fadeOut('slow');
+      $('#title-archives').fadeOut('slow');
+      $('#content-archives').fadeOut('slow');
+      $('#content-about').fadeOut('slow');
+
+      //homeをcurrentに
+      $('#home-btn').delay(1000).addClass('current');
+
+
+      //menuを出す
+      $('#wrapper-right').delay(2200).slideDown('slow');
+
+      topAnimation();
+      $current=$('#home-btn');
+      $('#menu-items').find('.current').removeClass('current');
+      $(this).addClass('current');
+
 
     }else{
-        topAnimation();
-        $current=$('#home-btn');
-        $('#menu-items').find('.current').removeClass('current');
-        $(this).addClass('current');
 
-
-    }
+    };
   });
+}else{
 
+}
 
 });
