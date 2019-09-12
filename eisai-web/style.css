@@ -2,6 +2,11 @@
   font-family: YuGothic,'Yu Gothic','Yu Gothic UI','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
 
+section h2{
+  color:#5009FF;
+  text-shadow: 0 1px 1px 1px #6A12E8;
+}
+
 /* ヘッダー */
 
 header{
@@ -10,7 +15,6 @@ header{
   width:100%;
   background-color:#4A40FF;
   position:fixed;
-  text-align:left;
   box-shadow:0 1px 2px 2px lightgray;
   z-index:100000;
 }
@@ -20,12 +24,6 @@ header{
   width:430px;
   height:83px;
   background-color:white;
-}
-
-.header-img{
-  position:absolute;
-  padding:0;
-  margin:0;
 }
 
 .branch-name{
@@ -38,10 +36,57 @@ header{
 }
 
 /* レスポンシブのヘッダーメニュー */
+.header-right{
+  float:right;
+  display:none;
+  width:100px;
+  height:43px;
+}
+
+.header-right-btn-wrapper{
+  float:right;
+}
+
+.menu-icon,
+.menu-close-icon{
+  cursor:pointer;
+}
+
+
+.menu-icon{
+  padding:6px 10px 6px 10px;
+  font-size:30px;
+  color:#eee;
+  float:right;
+}
+
+.menu-close-icon{
+  display:none;
+}
+
+.mobile-menu{
+  margin-top:83px;
+  width:100%;
+  background-color:#eee;
+  z-index:1000;
+  border-radius:0 0 5px 5px;
+  box-shadow:0 3px 1px 1px lightgray;
+  display:none;
+  opacity:0.9;
+}
+
+.mobile-menu>ul{
+  padding-left: 0;
+}
+
+.mobile-menu-item-a{
+  background-color:#eee;
+  border-radius:0 0 6px 6px;
+}
 
 /* 実際のコンテンツ */
 
-.container{
+.top-wrapper{
   padding-top:120px;
   padding-bottom:100px;
 }
@@ -182,7 +227,7 @@ header{
 
 .side-bar>ul{
   padding:0;
-  border-left:1px solid #4A40FF;
+  border-left:1px solid #4a40ff;
 }
 
 .menu-item{
@@ -191,10 +236,8 @@ header{
   font-weight:bold;
   margin:0.3rem;
   border-radius:3px;
-  border:1px solid white;
-  color:royalblue;
+  color:#4A40FF;
   text-align:left;
-  /* background-color:#E3F3FA; */
 }
 
 .menu-item-a{
@@ -203,6 +246,7 @@ header{
   height:100%;
   padding:1rem;
   border-radius:3px;
+  color:#4A40FF;
 }
 
 .menu-item-a:hover{
@@ -221,4 +265,17 @@ header{
 .main-wrapper{
   border:1px solid #707070;
   border-radius:6px;
+}
+
+/* footer関連 */
+
+footer{
+background-color: #4A40FF;
+color:#eee;
+}
+
+.right-alert{
+  color:#eee;
+  padding:0;
+  font-size:0.3rem;
 }
