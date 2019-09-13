@@ -11,6 +11,14 @@ $(function() {
     $('#menu-icon').delay(300).fadeIn(300);
   });
 
+  $('#practice-acordion').click(function(){
+    $('#practice-list').slideToggle();
+  })
+
+  $('#mobile-practice-acordion').click(function(){
+    $('#mobile-practice-list').slideToggle();
+  })
+
   if ($('header').width() > 768) {
 
     let $win = $(window),
@@ -30,4 +38,5 @@ $(function() {
         }
       });
     }
+
 })

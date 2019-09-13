@@ -84,6 +84,37 @@ header{
   border-radius:0 0 6px 6px;
 }
 
+/* モバイルのアコーディオン */
+
+#mobile-practice-list{
+  background-color:#ddd;
+  padding:0;
+  margin:0 2rem;
+  border-radius:6px;
+  display:none;
+  overflow-y: scroll;
+  height:30vh;
+}
+
+.mobile-practice-item{
+  list-style-type:none;
+}
+
+.mobile-practice-item-a{
+  font-size:1rem;
+  display:block;
+  font-weight:bold;
+  color:#4A40FF;
+  padding:5px 1rem;
+  border-radius:3px;
+}
+
+.mobile-practice-item-a:hover{
+  text-decoration:none;
+  background-color:#ccc;
+  color:#4A40FF;
+}
+
 /* 実際のコンテンツ */
 
 .top-wrapper{
@@ -266,6 +297,48 @@ header{
   padding-right:0.3rem;
 }
 
+/*サイドバーのアコーディオン */
+
+#practice-acordion{
+  cursor:pointer;
+}
+
+#practice-list{
+  margin-left:30px;
+  padding-left:5px;
+  background-color:#eee;
+  z-index:-100;
+  border-radius:3px;
+  overflow-y: scroll;
+  height:40vh;
+  max-height:310px;
+  display:none;
+}
+
+#practice-list:hover{
+  color:white;
+}
+
+.practice-item{
+  list-style-type:none;
+  color:#4A40FF;
+}
+
+.practice-item-a{
+  width:100%;
+  padding:5px;
+  display:block;
+  color:#4a40ff;
+  border-radius:3px;
+}
+
+.practice-item-a:hover{
+  color:white;
+  text-decoration:none;
+  background-color:#4a40ff;
+  transition:all 0.3s;
+}
+
 /* mainの部分 */
 
 .main-wrapper{
@@ -278,10 +351,43 @@ header{
 footer{
 background-color: #4A40FF;
 color:#eee;
+z-index:100000;
 }
 
 .right-alert{
   color:#eee;
   padding:0;
   font-size:0.3rem;
+}
+
+/* footerのリンク */
+
+.footer-link{
+  padding:10px;
+}
+
+.footer-link-item{
+  list-style-type:none;
+  padding-bottom:5px;
+}
+
+.footer-link-item-a{
+  color:white;
+  display:block;
+  padding:5px;
+  width:100%;
+}
+
+.footer-link-item-a:hover{
+  color:white;
+  opacity:0.7;
+  text-decoration:none;
+}
+
+/* footer最下部 */
+
+.right-display{
+  text-align:right;
+  font-size:0.5rem;
+  width:100%;
 }
