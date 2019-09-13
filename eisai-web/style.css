@@ -225,7 +225,13 @@ header{
 
 /* サイドバー */
 
-.side-bar>ul{
+.is-fixed{
+  position:fixed;
+  top:90px;
+  z-index:2;
+}
+
+.side-bar{
   padding:0;
   border-left:1px solid #4a40ff;
 }
